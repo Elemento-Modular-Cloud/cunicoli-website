@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'squarefont';
+    src: url('/fonts/Square.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'squarefontbold';
+    src: url('/fonts/Squareo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'herobold';
+    src: url('/fonts/hero-bold-webfont.woff2') format('woff2'),
+         url('/fonts/hero-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'herolight';
+    src: url('/fonts/hero-light-webfont.woff2') format('woff2'),
+            url('/fonts/hero-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'heroregular';
+    src: url('/fonts/hero-regular-webfont.woff2') format('woff2'),
+            url('/fonts/hero-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    font-size: 17px;
+    color: rgb(20,25,31);
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    transform-style: preserve-3d;
+    perspective: 1000;
+    backface-visibility: hidden;
+    overflow: hidden;
+    
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+}
+
+location-header {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 20vh;
+    color: white;
+    text-align: center;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    background-color: rgb(20,25,31);
+}
+
+location-header:nth-of-type(odd) {
+    left: 0;
+    top: 0;
+}
+
+location-header:nth-of-type(even) {
+    left: 50vw;
+    top: 0;
+}
+
+location-header img {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: 15vh;
+    margin: auto;
+}
+
+location-header a img:last-of-type {
+    height: 5vh;
+    width: 5vh;
+}
+
+location-header name {
+    font-size: 3vh;
+    font-family: herobold;
+    text-align: center;
+    width: 100%;
+}
+
+location-header address {
+    font-size: 1.7vh;
+    font-family: herolight;
+    font-style: normal;
+    text-align: center;
+    width: 100%;
+}
+
+events-container {
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+    height: 80vh;
+    margin: auto;
+}
+
+event {
+    position: relative;
+    display: inline-block;
+    width: 33vw;
+    height: 80vh;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    font-family: heroregular;
+    transform: translateY(40vh);
+}
