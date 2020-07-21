@@ -154,8 +154,12 @@ spacer, arrow-spacer {
     position: relative;
     display: inline-block;
     width: 100vw;
-    height: 26vh;
+    height: 5vh;
     overflow-x: hidden;
+}
+
+spacer {
+    height: 12vh;
 }
 
 arrow-spacer::after {
@@ -190,6 +194,8 @@ arrow-spacer::after {
     display: inline-block;
     white-space: pre-line;
     overflow: hidden;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 .content:nth-of-type(odd) {
