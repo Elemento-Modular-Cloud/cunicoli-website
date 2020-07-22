@@ -93,7 +93,7 @@ container:first-of-type {
     background-color: white;
 }
 
-motto {
+motto, andyou {
     position: relative;
     display: inline-block;
     width: 100vw;
@@ -105,12 +105,21 @@ motto {
     white-space: pre-line;
 }
 
-container:nth-of-type(even) motto {
+andyou {
+    font-size: 1.5vw;
+    margin-bottom: 1vh;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: flare;
+    animation-timing-function: ease-in-out;
+}
+
+container:nth-of-type(even) motto, container:nth-of-type(even) andyou {
     color: rgb(20,25,31);
     background-color: white;
 }
 
-container:nth-of-type(odd) motto {
+container:nth-of-type(odd) motto, container:nth-of-type(odd) andyou {
     color: white;
     background-color: rgb(20,25,31);
 }
