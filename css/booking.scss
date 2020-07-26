@@ -110,6 +110,7 @@ event {
     position: relative;
     filter: grayscale();
     transition: filter .3s ease;
+    cursor: pointer;
 }
 
 event:nth-of-type(1) {

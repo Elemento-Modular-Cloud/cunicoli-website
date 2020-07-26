@@ -1,3 +1,5 @@
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
 <html>
     <head>
         <title>Cunicoli</title>
@@ -21,9 +23,39 @@
         </location-header>
 
         <events-container>
-            <event><a href="https://www.eventbrite.com/e/114366045922">Circo.lare</a></event>
-            <event><a href="https://www.eventbrite.com/e/114366226462">Teatral'mente</a></event>
-            <event><a href="https://www.eventbrite.com/e/114366316732">Ritornelleremo!</a></event>
+            <event id="circolare-baladin"><a>Circo.lare</a></event>
+            <event id="teatralmente-baladin"><a>Teatral'mente</a></event>
+            <event id="ritornelleremo-baladin"><a>Ritornelleremo!</a></event>
         </events-container>
     </body>
 </html>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+    
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366045922',
+        modal: true,
+        modalTriggerElementId: 'circolare-baladin',
+        onOrderComplete: exampleCallback
+    });
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366226462',
+        modal: true,
+        modalTriggerElementId: 'teatralmente-baladin',
+        onOrderComplete: exampleCallback
+    });
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366316732',
+        modal: true,
+        modalTriggerElementId: 'ritornelleremo-baladin',
+        onOrderComplete: exampleCallback
+    });
+</script>

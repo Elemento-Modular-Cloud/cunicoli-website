@@ -1,3 +1,5 @@
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
 <html>
     <head>
         <title>Cunicoli</title>
@@ -23,9 +25,39 @@
         </location-header>
 
         <events-container>
-            <event><a href="https://www.eventbrite.com/e/114364858370">Circo.lare</a></event>
-            <event><a href="https://www.eventbrite.com/e/114366202390">Teatral'mente</a></event>
-            <event><a href="https://www.eventbrite.com/e/114366286642">Ritornelleremo!</a></event>
+            <event id="circolare-birrovia"><a>Circo.lare</a></event>
+            <event id="teatralmente-birrovia"><a>Teatral'mente</a></event>
+            <event id="ritornelleremo-birrovia"><a>Ritornelleremo!</a></event>
         </events-container>
     </body>
 </html>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+    
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114364858370',
+        modal: true,
+        modalTriggerElementId: 'circolare-birrovia',
+        onOrderComplete: exampleCallback
+    });
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366202390',
+        modal: true,
+        modalTriggerElementId: 'teatralmente-birrovia',
+        onOrderComplete: exampleCallback
+    });
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366286642',
+        modal: true,
+        modalTriggerElementId: 'ritornelleremo-birrovia',
+        onOrderComplete: exampleCallback
+    });
+</script>
