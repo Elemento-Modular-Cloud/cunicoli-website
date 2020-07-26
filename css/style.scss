@@ -367,23 +367,35 @@ location book a {
 social {
     position: fixed;
     display: block;
-    width: 4vw;
+    width: 6vmin;
     height: fit-content;
     right: 5px;
     top: 40vh;
     background-color: white;
     box-shadow: 0 0 4px black;
     z-index: 10;
-    border-radius: 4vw;
+    border-radius: 6vmin;
+}
+
+social a {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    width: 6vmin;
+    height: 3.5vmin;
+    margin-top: 1.5vmin;
+    margin-bottom: 1.5vmin;
 }
 
 social img {
     position: relative;
     display: inline-block;
-    width: 2.5vw;
-    margin-top: .5vw;
-    margin-bottom: .5vw;
-    transform: translateX(.75vw);
+    width: 3.5vmin;
+    margin-top: 1.5vmin;
+    margin-bottom: 1.5vmin;
+    transform: translateX(1.25vmin);
     border-radius: 10px;
     transition: transform .3s ease;
     transform-origin: right;
@@ -393,12 +405,12 @@ social img:hover {
     transform: scale(1.1);
 }
 
-social img:first-of-type{
-    margin-top: 1vw;
+social a:first-of-type{
+    margin-top: 0vmin;
 }
 
-social img:last-of-type{
-    margin-bottom: 1vw;
+social a:last-of-type{
+    margin-bottom: 3vmin;
 }
 
 footer {
