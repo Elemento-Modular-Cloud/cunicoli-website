@@ -1,3 +1,5 @@
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
 <html>
     <head>
         <title>Cunicoli</title>
@@ -30,7 +32,7 @@
                 <a href="https://www.google.com/maps?saddr=My+Location&daddr=Piazza+Foro+Boario+12100+Cuneo+Italy">
                     <img src="img/map-icon-png-6.png">
                 </a>
-                <book><a href="https://www.eventbrite.com/e/114366226462">Prenota ora!</a></book>
+                <book id="teatralmente-baladin">Prenota ora!</book>
             </location>
             <location>
                 <img src="img/birrovia.png">
@@ -41,8 +43,30 @@
                 <a href="https://www.google.com/maps?saddr=My+Location&daddr=Birrovia+Vecchia+Stazione+12100+Cuneo+Italy">
                     <img src="img/map-icon-png-6.png">
                 </a>
-                <book><a href="https://www.eventbrite.com/e/114366202390">Prenota ora!</a></book>
+                <book id="teatralmente-birrovia">Prenota ora!</book>
             </location>
         </location-wrapper>
     </body>
 </html>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+    
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366202390',
+        modal: true,
+        modalTriggerElementId: 'teatralmente-birrovia',
+        onOrderComplete: exampleCallback
+    });
+    
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366226462',
+        modal: true,
+        modalTriggerElementId: 'teatralmente-baladin',
+        onOrderComplete: exampleCallback
+    });
+</script>

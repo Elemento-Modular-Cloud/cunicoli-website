@@ -151,7 +151,7 @@ location address {
     width: 100%;
 }
 
-location book a {
+location book {
     position: relative;
     display: inline-block;
     width: 50vw;
@@ -165,6 +165,7 @@ location book a {
     animation-iteration-count: infinite;
     animation-name: flare;
     animation-timing-function: ease-in-out;
+    cursor: pointer;
 }
 
 @keyframes flare {
