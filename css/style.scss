@@ -20,16 +20,16 @@ body {
     scroll-behavior: smooth;
 }
 
-.consulta {
+.logos {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 101vw;
     z-index: 20;
     text-align: center;
 }
 
-.consulta p {
+.logos p {
     position: absolute;
     width: 100vw;
     top: 2vh;
@@ -40,20 +40,37 @@ body {
     font-family: heroregular;
 }
 
-.consulta img {
+logocontainer {
     position: relative;
     display: inline-block;
+    top: 5vh;
+    left: 0;
+    width: 10vw;
+    height: 10vmin;
+    margin: 0;
+    padding: 0;
+}
+
+logocontainer:first-of-type {
+    width: 45vw;
     height: 5vmin;
+    text-align: right;
+}
+
+logocontainer:last-of-type {
+    width: 45vw;
+    height: 5vmin;
+    text-align: left;
+}
+
+logocontainer img {
+    position: relative;
+    display: inline-block;
+    height: 100%;
     width: auto;
     margin-left: 1vmin;
     margin-right: 1vmin;
-    top: 5vh;
-    // left: calc(50vw - 0.5 * 20vmin);
     z-index: 10;
-}
-
-.consulta img:nth-of-type(3) {
-    height: 10vmin;
 }
 
 container img {
