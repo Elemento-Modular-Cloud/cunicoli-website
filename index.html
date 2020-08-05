@@ -1,3 +1,5 @@
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
 <html>
     <head>
         <title>Cunicoli</title>
@@ -34,7 +36,7 @@
             <a href="https://www.facebook.com/Cunicoli-106551744485210"><img src="./img/facebook.png"></a>
             <a href=""><img src="./img/instagram.png"></a>
             <a href="https://www.eventbrite.com/o/consulta-giovanile-di-cuneo-30759340654"><img src="./img/eventbrite.png"></a>
-            <a href="https://www.gofundme.com/f/cunicoli-il-festival-diffuso"><img src="./img/gofund.png"></a>
+            <!-- <a href="https://www.gofundme.com/f/cunicoli-il-festival-diffuso"><img src="./img/gofund.png"></a> -->
         </social>
 
         <container>
@@ -45,27 +47,29 @@
             <motto>le tre serate</motto>
             <spacer></spacer>
             <div class="content">
-                <data>28 agosto - 21:30</data>
-                <titolo>Circo.lare</titolo>
-                <more>volteggi ed eteree performance</more>
-                <chi>Circo Zoè & Fuma che 'Nduma</chi>
-                <book><a href="book-circus.html">Prenota ora!</a></book>
-            </div>
-
-            <div class="content">
                 <data>29 agosto - 21:00</data>
-                <titolo>Teatral'mente</titolo>
-                <more>storie di donne, di uomini, di montagne e di streghe</more>
-                <chi>Teatro in Bottiglia & Compagnia del Melarancio</chi>
-                <book><a href="book-theatre.html">Prenota ora!</a></book>
+                <titolo>Musi-canti</titolo>
+                <more>XXXX</more>
+                <chi>Birrovia - Vecchia Stazione Cuneo Gesso</chi>
+                <book id="musicanti-birrovia"><a>Prenota ora!</a></book>
+
+                <titolo>Circo.lare</titolo>
+                <more>Circo Zoè</more>
+                <chi>Open Baladin - Piazza Foro Boario</chi>
+                <book id="circolare-baladin"><a>Prenota ora!</a></book>
             </div>
 
             <div class="content">
                 <data>30 agosto - 21:00</data>
+                <titolo>Teatral'mente</titolo>
+                <more>Compagnia del Melarancio</more>
+                <chi>Birrovia - Vecchia Stazione Cuneo Gesso</chi>
+                <book id="teatralmente-birrovia"><a>Prenota ora!</a></book>
+
                 <titolo>Ritornelleremo!</titolo>
-                <more>il giusto groove per una dose serale di gioia acustica</more>
-                <chi>Orchestra del Sanrito & ???</chi>
-                <book><a href="book-music.html">Prenota ora!</a></book>
+                <more>Orchestra del Sanrito</more>
+                <chi>Open Baladin - Piazza Foro Boario</chi>
+                <book id="ritornelleremo-baladin"><a>Prenota ora!</a></book>
             </div>
             <spacer></spacer>
             <arrow-spacer></arrow-spacer>
@@ -132,3 +136,41 @@
         </footer>
     </body>
 </html>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+    
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114364858370',
+        modal: true,
+        modalTriggerElementId: 'musicanti-birrovia',
+        onOrderComplete: exampleCallback
+    });
+    
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366045922',
+        modal: true,
+        modalTriggerElementId: 'circolare-baladin',
+        onOrderComplete: exampleCallback
+    });
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366202390',
+        modal: true,
+        modalTriggerElementId: 'teatralmente-birrovia',
+        onOrderComplete: exampleCallback
+    });
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366316732',
+        modal: true,
+        modalTriggerElementId: 'ritornelleremo-baladin',
+        onOrderComplete: exampleCallback
+    });
+</script>

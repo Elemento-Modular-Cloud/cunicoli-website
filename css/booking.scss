@@ -99,7 +99,7 @@ events-container {
 event {
     position: relative;
     display: inline-flex;
-    width: 33vw;
+    width: 50vw;
     height: 80vh;
     text-align: center;
     vertical-align: middle;
@@ -113,23 +113,22 @@ event {
     cursor: pointer;
 }
 
-event:nth-of-type(1) {
+#circolare-baladin {
     background-image: url('../img/circus.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-event:nth-of-type(2) {
+#teatralmente-birrovia {
     background-image: url('../img/theatre.jpg');
     background-size: 100% 80vh;
     background-repeat: no-repeat;
 }
 
-event:nth-of-type(3) {
+#musicanti-birrovia, #ritornelleremo-baladin {
     background-image: url('../img/music.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 34vw;
 }
 
 
@@ -144,8 +143,14 @@ event a {
     text-decoration: none;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    width: 33vw;
+    white-space: pre-line;
+    width: 50vw;
+    vertical-align: middle;
     color: white;
-    text-shadow: 0px 0px 10px #000000;
+    text-shadow: 0px 0px 10px #000000, 0px 0px 10px #000000;
     transform: rotate(180deg);
+}
+
+event a data {
+    font-size: 2.5vh;
 }
