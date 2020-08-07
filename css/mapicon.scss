@@ -1,0 +1,19 @@
+mapicon {
+    font-size: 4vh;
+    line-height: 6vh;
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: squarefont;
+    color: rgb(231, 129, 62);
+}
+
+mapicon::after {
+    content: '📍';
+    text-decoration: none;
+}
+
+mapicon:hover::after {
+    font-size: 3vh;
+    content: 'indicazioni';
+    text-decoration: none;
+}

@@ -74,6 +74,10 @@ location-header address {
     width: 100%;
 }
 
+location-header a {
+    text-decoration: none;
+}
+
 events-container {
     position: relative;
     display: inline-block;
@@ -97,7 +101,7 @@ events-container {
 }
 
 event {
-    position: relative;
+    position: absolute;
     display: inline-flex;
     width: 50vw;
     height: 80vh;
@@ -107,27 +111,44 @@ event {
     font-family: heroregular;
     margin: 0;
     padding: 0;
-    position: relative;
     filter: grayscale();
     transition: filter .3s ease;
     cursor: pointer;
 }
 
+event:nth-of-type(1) {
+    left: 0;
+}
+
+event:nth-of-type(2) {
+    left: 50vw;
+}
+
 #circolare-baladin {
-    background-image: url('../img/circus.jpg');
+    background-image: url('../img/zoe.jpg');
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
 #teatralmente-birrovia {
-    background-image: url('../img/theatre.jpg');
-    background-size: 100% 80vh;
+    background-image: url('../img/melarancio.jpg');
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
-#musicanti-birrovia, #ritornelleremo-baladin {
-    background-image: url('../img/music.jpg');
+#musicanti-birrovia {
+    background-image: url('../img/fratellislip.jpg');
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#ritornelleremo-baladin {
+    background-image: url('../img/sanrito.jpg');
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -136,19 +157,23 @@ event:hover {
     filter: none;
 }
 
+event:hover a {
+    color: white;
+}
+
 event a {
-    font-size: 4vh;
-    font-family: heroregular;
+    font-size: 6vw;
+    font-family: herobold;
     text-align: center;
     text-decoration: none;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
     white-space: pre-line;
     width: 50vw;
-    vertical-align: middle;
+    height: 80%;
+    margin: auto;
+    padding: auto;
+    // vertical-align: middle;
     color: white;
-    text-shadow: 0px 0px 10px #000000, 0px 0px 10px #000000;
-    transform: rotate(180deg);
+    text-shadow: 0px 0px 10px #000000, 0px 0px 10px #000000, 0px 0px 10px #000000, 0px 0px 10px #000000;
 }
 
 event a data {

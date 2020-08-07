@@ -265,12 +265,12 @@ arrow-spacer::after {
     transform: translateX(calc(-1vh + 2.5px)) translateY(-1vh);
 }
 
-.content more {
+.content chi {
     font-size: 1.7vw;
     font-family: heroregular;
 }
 
-.content more a {
+.content chi a {
     vertical-align: middle;
     height: 1.7vw;
     font-size: 1.2vw;
@@ -281,24 +281,32 @@ arrow-spacer::after {
     color: rgb(231, 129, 62);
 }
 
-.content more a::after {
+.content chi a::after {
     content: '[+]';
     transition: content 1s;
 }
 
-.content more a:hover::after {
+.content chi a:hover::after {
     content: '[more]';
 }
 
-.content chi {
+.content dove {
     font-size: 1.2vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(62, 68, 78);
 }
 
-.content data, more, chi, titolo{
+.content data, chi, dove, titolo{
     padding-left: 2vw;
     padding-right: 2vw;
+}
+
+.content dove::before {
+    content: '📍';
+}
+
+location a {
+    text-decoration: none;
 }
 
 location-wrapper {
@@ -377,6 +385,7 @@ location book a, .content book a {
     animation-iteration-count: infinite;
     animation-name: flare;
     animation-timing-function: ease-in-out;
+    cursor: pointer;
 }
 
 .content book a {
