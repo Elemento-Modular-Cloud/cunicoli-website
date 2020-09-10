@@ -208,6 +208,10 @@ arrow-spacer::after {
     margin-bottom: 2vh;
 }
 
+.past {
+    opacity: .3;
+}
+
 .content:nth-of-type(odd) {
     width: 50vw;
     text-align: right;
@@ -395,6 +399,10 @@ location book a, .content book a {
     width: 100%;
     padding-top: 1vh;
     animation-name: flare-black;
+}
+
+.past book a {
+    display: none;
 }
 
 location book a {
