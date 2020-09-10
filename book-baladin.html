@@ -26,7 +26,7 @@
         <events-container>
             <event style="width: 100vw;" id="ritornelleremo-baladin"><a>
                 Ritornelleremo!
-                <data>## settembre (da definire) - ore 21:00</data>
+                <data>18 settembre - ore 21:00</data>
             </a></event>
         </events-container>
     </body>
@@ -61,11 +61,11 @@
         onOrderComplete: exampleCallback
     });
 
-    // window.EBWidgets.createWidget({
-    //     widgetType: 'checkout',
-    //     eventId: '114366316732',
-    //     modal: true,
-    //     modalTriggerElementId: 'ritornelleremo-baladin',
-    //     onOrderComplete: exampleCallback
-    // });
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366316732',
+        modal: true,
+        modalTriggerElementId: 'ritornelleremo-baladin',
+        onOrderComplete: exampleCallback
+    });
 </script>
