@@ -295,19 +295,23 @@ arrow-spacer::after {
     content: '[more]';
 }
 
-.content dove {
+.content dove, prezzo {
     font-size: 1.2vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(62, 68, 78);
 }
 
-.content data, chi, dove, titolo{
+.content data, chi, dove, titolo, prezzo{
     padding-left: 2vw;
     padding-right: 2vw;
 }
 
 .content dove::before {
     content: '📍';
+}
+
+.content prezzo::before {
+    content: '🏷 ';
 }
 
 location a {
