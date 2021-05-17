@@ -275,7 +275,7 @@ arrow-spacer::after {
     font-family: heroregular;
 }
 
-.content chi a {
+.content titolo a {
     vertical-align: middle;
     height: 1.7vw;
     font-size: 1.2vw;
@@ -286,22 +286,26 @@ arrow-spacer::after {
     color: rgb(231, 129, 62);
 }
 
-.content chi a::after {
+.content titolo a::after {
     content: '[+]';
     transition: content 1s;
 }
 
-.content chi a:hover::after {
+.content titolo a:hover::after {
     content: '[more]';
 }
 
-.content dove, prezzo {
+.content dove, prezzo, food, ora {
     font-size: 1.2vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(62, 68, 78);
 }
 
-.content data, chi, dove, titolo, prezzo{
+.content dove {
+    font-size: 1.4vw;
+}
+
+.content data, chi, dove, titolo, prezzo, food, ora{
     padding-left: 2vw;
     padding-right: 2vw;
 }
@@ -312,6 +316,14 @@ arrow-spacer::after {
 
 .content prezzo::before {
     content: '🏷 ';
+}
+
+.content ora::before {
+    content: '🕣 ';
+}
+
+.content food::before {
+    content: '🍽 ';
 }
 
 location a {
@@ -455,7 +467,7 @@ partnercontainer img{
 }
 
 partnercontainer:nth-of-type(1) {
-    width: calc(28vw * 6 * 2);
+    width: calc(28vw * 5 * 2);
     animation: scroll 15s linear 0s infinite;
     left: 0;
     // left: calc(-28vw * 4 - 1vw);
@@ -463,7 +475,7 @@ partnercontainer:nth-of-type(1) {
 
 @keyframes scroll {
     0% { left: 0; }
-	100% { left: calc(-28vw * 5 - 1vw); }  /* top is the number of spans (in this case 8) multiplied by span height (45px as described above)*/
+	100% { left: calc(-28vw * 4 - 1vw); }  /* top is the number of spans (in this case 8) multiplied by span height (45px as described above)*/
 }
 
 partnercontainer:nth-of-type(1) img{
