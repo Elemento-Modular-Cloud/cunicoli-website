@@ -301,9 +301,6 @@ arrow-spacer::after {
     color: rgb(62, 68, 78);
 }
 
-.content dove {
-    font-size: 1.4vw;
-}
 
 .content data, chi, dove, titolo, prezzo, food, ora{
     padding-left: 2vw;
@@ -311,7 +308,7 @@ arrow-spacer::after {
 }
 
 .content dove::before {
-    content: '📍';
+    content: '📍 ';
 }
 
 .content prezzo::before {
@@ -326,8 +323,13 @@ arrow-spacer::after {
     content: '🍽 ';
 }
 
-location a {
+location a, dove a {
     text-decoration: none;
+    color: rgb(62, 68, 78);
+}
+
+location a:hover, dove a:hover {
+    color: rgb(231, 129, 62);
 }
 
 location-wrapper {
