@@ -318,29 +318,29 @@ arrow-spacer::after {
     padding-right: 2vw;
 }
 
-.content dove::before {
-    content: '📍 ';
+.content:nth-of-type(even) dove::before, .content:nth-of-type(odd) dove::after {
+    content: ' 📍 ';
 }
 
-.content prezzo::before {
-    content: '🏷 ';
+.content:nth-of-type(even) prezzo::before, .content:nth-of-type(odd) prezzo::after {
+    content: ' 🏷 ';
 }
 
-.content ora::before {
-    content: '🕣 ';
+.content:nth-of-type(even) ora::before, .content:nth-of-type(odd) ora::after {
+    content: ' 🕣 ';
 }
 
-.content food::before {
-    content: '🍽 ';
+.content:nth-of-type(even) food::before, .content:nth-of-type(odd) food::after {
+    content: ' 🍽 ';
 }
 
 location a, dove a {
-    text-decoration: none;
-    color: rgb(62, 68, 78);
+    // text-decoration: none;
+    color: rgb(231, 129, 62);
 }
 
 location a:hover, dove a:hover {
-    color: rgb(231, 129, 62);
+    color: rgb(62, 68, 78);
 }
 
 location-wrapper {
@@ -480,7 +480,7 @@ partnercontainer img{
 }
 
 partnercontainer:nth-of-type(1) {
-    width: calc(28vw * 5 * 2);
+    width: calc(28vw * 8 * 2);
     animation: scroll 15s linear 0s infinite;
     left: 0;
     // left: calc(-28vw * 4 - 1vw);
@@ -488,7 +488,7 @@ partnercontainer:nth-of-type(1) {
 
 @keyframes scroll {
     0% { left: 0; }
-	100% { left: calc(-28vw * 4 - 1vw); }  /* top is the number of spans (in this case 8) multiplied by span height (45px as described above)*/
+	100% { left: calc(-28vw * 7 - 1vw); }  /* top is the number of spans (in this case 8) multiplied by span height (45px as described above)*/
 }
 
 partnercontainer:nth-of-type(1) img{
