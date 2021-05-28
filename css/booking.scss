@@ -79,11 +79,12 @@ location-header a {
 }
 
 events-container {
-    position: relative;
+    position: absolute;
     display: inline-block;
+    top: 37vh;
+    left: 0;
     width: 120vw;
-    height: 80vh;
-    margin: auto;
+    height: 70vh;
     background-color: rgb(20,25,31);
 }
 
@@ -104,7 +105,7 @@ event {
     position: absolute;
     display: inline-flex;
     width: 50vw;
-    height: 80vh;
+    height: 70vh;
     text-align: center;
     vertical-align: middle;
     color: black;
@@ -124,29 +125,36 @@ event:nth-of-type(2) {
     left: 50vw;
 }
 
-#circolare-baladin {
-    background-image: url('../img/zoe.jpg');
+#mulinoadarte {
+    background-image: url('../img/mulinoadarte.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
-#teatralmente-birrovia {
-    background-image: url('../img/melarancio.jpg');
+#bellifreschi {
+    background-image: url('../img/bellifreschi.jpeg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
-#musicanti-birrovia {
-    background-image: url('../img/fratellislip.jpg');
+#tomnewtontrio {
+    background-image: url('../img/tomnewtontrio.jpeg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+#bandakadabra {
+    background-image: url('../img/bandakadabra.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
-#ritornelleremo-baladin {
-    background-image: url('../img/sanrito.jpg');
+#granbaldub {
+    background-image: url('../img/granbaldub.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -178,4 +186,18 @@ event a {
 
 event a data {
     font-size: 2.5vh;
+}
+
+.img-wrapper {
+    display: inline-block;
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+    margin: auto;
+}
+
+.img-wrapper img {
+    height: 16vh;
+    width: auto;
+    margin-top: 2vh;
 }

@@ -15,25 +15,64 @@
         <a href="./index.html"><div class="home"></div></a>
 
         <location-header>
-            <img src="img/birrovia.svg">
+            <div class="img-wrapper">
+                <img src="img/birrovia.svg">
+            </div>
             <name>Birrovia</name>
             <address>
                 Piazzale della Vecchia Stazione Cuneo Gesso
             </address>
-            <a href="https://www.google.com/maps?saddr=My+Location&daddr=Birrovia+Vecchia+Stazione+12100+Cuneo+Italy">
+            <a href="https://g.page/BirroviaCuneo?share">
             <mapicon></mapicon>
             </a>
         </location-header>
-
+        
         <events-container>
-            <event id="teatralmente-birrovia"><a>
-                Teatral'mente
-                <data>29 agosto 2020 - ore 21:00</data>
-            </a></event>
-            <event id="musicanti-birrovia"><a>
-                Musi-canti
-                <data>30 agosto 2020 - ore 21:00</data>
+            <event style="width: 100vw;" id="granbaldub"><a>
+
+
+                
+                Gran Bal Dub
+                <data>4 luglio - ore 21:00</data>
             </a></event>
         </events-container>
     </body>
 </html>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+    
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114364858370',
+        modal: true,
+        modalTriggerElementId: 'musicanti-birrovia',
+        onOrderComplete: exampleCallback
+    });
+    
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366045922',
+        modal: true,
+        modalTriggerElementId: 'circolare-baladin',
+        onOrderComplete: exampleCallback
+    });
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366202390',
+        modal: true,
+        modalTriggerElementId: 'teatralmente-birrovia',
+        onOrderComplete: exampleCallback
+    });
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366316732',
+        modal: true,
+        modalTriggerElementId: 'ritornelleremo-baladin',
+        onOrderComplete: exampleCallback
+    });
+</script>

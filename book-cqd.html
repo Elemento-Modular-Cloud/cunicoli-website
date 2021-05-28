@@ -1,0 +1,79 @@
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+<html>
+    <head>
+        <title>Cunicoli</title>
+        <link async rel="shortcut icon" type="image/x-icon" href="img/hole.ico">
+        <link async rel="apple-touch-icon" href="img/hole.ico">
+
+        <link rel="stylesheet" type="text/css" href="css/fonts.scss"/>
+        <link rel="stylesheet" type="text/css" href="css/booking.scss"/>
+        <link rel="stylesheet" type="text/css" href="css/mapicon.scss"/>
+    </head>
+
+    <body>
+        <a href="./index.html"><div class="home"></div></a>
+
+        <location-header>
+            <div class="img-wrapper">
+                <img src="img/cqd.png">
+            </div>
+            <name>Casa del Quartiere Donatello</name>
+            <address>
+                Via Augusto Rostagni 23L
+            </address>
+            <a href="https://g.page/CasaQuartiereDonatello?share">
+            <mapicon></mapicon>
+            </a>
+        </location-header>
+        
+        <events-container>
+            <event style="width: 100vw;" id="mulinoadarte"><a>
+
+
+                
+                Mi abbatto e sono felice!
+                by Mulino ad Arte
+                <data>30 giugno - ore 21:00</data>
+            </a></event>
+        </events-container>
+    </body>
+</html>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+    
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114364858370',
+        modal: true,
+        modalTriggerElementId: 'musicanti-birrovia',
+        onOrderComplete: exampleCallback
+    });
+    
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366045922',
+        modal: true,
+        modalTriggerElementId: 'circolare-baladin',
+        onOrderComplete: exampleCallback
+    });
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366202390',
+        modal: true,
+        modalTriggerElementId: 'teatralmente-birrovia',
+        onOrderComplete: exampleCallback
+    });
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '114366316732',
+        modal: true,
+        modalTriggerElementId: 'ritornelleremo-baladin',
+        onOrderComplete: exampleCallback
+    });
+</script>
