@@ -164,12 +164,12 @@ spacer, arrow-spacer {
     position: relative;
     display: inline-block;
     width: 100vw;
-    height: fit-content;
+    height: 8vh;
     overflow-x: hidden;
 }
 
-spacer {
-    height: 8vh;
+arrow-spacer {
+    height: 10vh;
 }
 
 arrow-spacer::after {
@@ -210,6 +210,7 @@ arrow-spacer::after {
 
 .past {
     opacity: .3;
+    pointer-events: none;
 }
 
 .content:nth-of-type(odd) {
