@@ -584,7 +584,7 @@ footer a:hover {
     color: rgb(252,212,117);
 }
 
-.cunicolanti {
+.cunicolanti, .volontari {
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -601,4 +601,17 @@ footer a:hover {
     white-space: pre-line;
     padding-top: 2vh;
     padding-bottom: 2vh;
+}
+
+.volontari {
+    grid-template-columns: repeat(5, 1fr);
+    font-family: heroregular;
+    // margin: auto;
+    font-size: 1.5vh;
+}
+
+.volontari img {
+    height: 5vw;
+    width: auto;
+    padding: 0;
 }
