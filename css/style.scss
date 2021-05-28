@@ -121,7 +121,7 @@ motto, andyou, description {
     width: 100vw;
     left: 0;
     text-align: center;
-    font-size: 3vw;
+    font-size: 4vh;
     font-family: squarefont;
     margin-top: 2vh;
     white-space: pre-line;
@@ -131,14 +131,14 @@ motto, andyou, description {
 
 description andyou {
     width: 100%;
-    font-size: 1.5vw;
+    font-size: 1.5vh;
     margin-top: 4vh;
     margin-bottom: 10vh;
     color: rgb(231, 129, 62);
 }
 
 description {
-    font-size: 1.7vw;
+    font-size: 1.7vh;
     margin-left: 20vw;
     margin-right: 20vw;
     width: 60vw;
@@ -164,12 +164,12 @@ spacer, arrow-spacer {
     position: relative;
     display: inline-block;
     width: 100vw;
-    height: 5vh;
+    height: fit-content;
     overflow-x: hidden;
 }
 
 spacer {
-    height: 10vh;
+    height: 8vh;
 }
 
 arrow-spacer::after {
@@ -224,7 +224,7 @@ arrow-spacer::after {
 }
 
 .content data {
-    font-size: 2vw;
+    font-size: 2vh;
     font-family: squarefont;
     color: rgb(52, 73, 79);
     border-bottom: 5px solid rgb(52,63,79);
@@ -240,10 +240,17 @@ arrow-spacer::after {
     padding-right: 14vw;
 }
 
-.content titolo {
-    font-size: 4vw;
+.content titolo, .content sottotitolo {
+    font-size: 3vh;
     font-family: heroregular;
-    line-height: 6vw;
+    line-height: 5vh;
+}
+
+.content sottotitolo {
+    font-size: 1.8vh;
+    line-height: 1.8vh;
+    padding-right: 2vw;
+    color: rgb(100, 120, 128);
 }
 
 .content:nth-of-type(odd) titolo::after {
@@ -271,14 +278,14 @@ arrow-spacer::after {
 }
 
 .content chi {
-    font-size: 1.7vw;
+    font-size: 1.7vh;
     font-family: heroregular;
 }
 
 .content titolo a {
     vertical-align: middle;
     height: 1.7vw;
-    font-size: 1.2vw;
+    font-size: 1.2vh;
     line-height: 1.7vw;
     margin-left: .5vw;
     margin-right: .5vw;
@@ -296,11 +303,14 @@ arrow-spacer::after {
 }
 
 .content dove, prezzo, food, ora {
-    font-size: 1.2vw;
+    font-size: 1.2vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(62, 68, 78);
 }
 
+.content food {
+    padding-top: 1vh;
+}
 
 .content data, chi, dove, titolo, prezzo, food, ora{
     padding-left: 2vw;
@@ -400,7 +410,7 @@ location book a, .content book a {
     width: 50vw;
     left: 0;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2.5vh;
     font-family: squarefont;
     text-decoration: none;
     white-space: pre-line;
@@ -413,7 +423,7 @@ location book a, .content book a {
 
 .content book a {
     text-align: inherit;
-    font-size: 1.5vw;
+    font-size: 1.5vh;
     width: 100%;
     padding-top: 1vh;
     animation-name: flare-black;
@@ -580,7 +590,7 @@ footer a:hover {
     background-color: white;
     left: 0;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2.5vh;
     font-family: squarefont;
     text-decoration: none;
     white-space: pre-line;
