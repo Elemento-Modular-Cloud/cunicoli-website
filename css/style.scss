@@ -125,7 +125,7 @@ motto, andyou, description {
     font-family: squarefont;
     margin-top: 2vh;
     white-space: pre-line;
-    background-color: white;
+    background-color: rgb(20,25,31);
     color: rgb(231, 129, 62);
 }
 
@@ -585,6 +585,10 @@ footer a:hover {
 
 .cunicolanti {
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-columns: min-content;
     top: -10vh;
     width: 100vw;
     background-color: white;
@@ -594,5 +598,6 @@ footer a:hover {
     font-family: squarefont;
     text-decoration: none;
     white-space: pre-line;
-    padding-bottom: 7vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
