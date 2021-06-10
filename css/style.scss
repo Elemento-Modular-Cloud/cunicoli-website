@@ -615,3 +615,32 @@ footer a:hover {
     width: auto;
     padding: 0;
 }
+
+chat {
+    position: fixed;
+    z-index: 10;
+    right: calc(-30vw + 6vmin);
+    bottom: 5px;
+    height: 30vh;
+    width: 30vw;
+    border-radius: 6vmin 0 0 6vmin;
+    transition: right .3s ease-in-out;
+    background-color: white;
+    box-shadow: 0 0 4px black;
+}
+
+chattitle {
+    position: absolute;
+    top: calc((30vh - 6vmin) / 2);
+    left: 0;
+    width: fit-content;
+    height: 6vmin;
+    line-height: 6vmin;
+    font-family: squarefont;
+    font-size: 3vmin;
+    transform: rotate(-90deg);
+}
+
+chat:hover {
+    right: 0;
+}

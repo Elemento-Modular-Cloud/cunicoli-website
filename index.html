@@ -38,6 +38,38 @@
             <a href="https://www.eventbrite.com/o/consulta-giovanile-di-cuneo-30759340654"><img src="./img/eventbrite.png"></a>
         </social>
 
+        <chat>
+            <chattitle>
+                Chat
+            </chattitle>
+            <!-- Messenger Plug-in Discussion Code -->
+            <div id="fb-root"></div>
+
+            <!-- Your Plug-in Discussion code -->
+            <div id="fb-customer-chat" class="fb-customerchat">
+            </div>
+
+            <script>
+                var chatbox = document.getElementById('fb-customer-chat');
+                chatbox.setAttribute("page_id", "106551744485210");
+                chatbox.setAttribute("attribution", "biz_inbox");
+                window.fbAsyncInit = function() {
+                  FB.init({
+                    xfbml            : true,
+                    version          : 'v11.0'
+                  });
+                };
+              
+                (function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = 'https://connect.facebook.net/it_IT/sdk/xfbml.customerchat.js';
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+        </chat>
+
         <container>
             <motto>Cinque serate, 
                 cinque dehors unici, 
