@@ -611,9 +611,14 @@ footer a:hover {
 }
 
 .volontari img {
-    height: 5vw;
+    height: 8vw;
     width: auto;
     padding: 0;
+    border-radius: 50%;
+}
+
+.volontari ruolo {
+    font-size: smaller;
 }
 
 chat {
