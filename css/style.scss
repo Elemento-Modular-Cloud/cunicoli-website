@@ -46,20 +46,20 @@ logocontainer {
     vertical-align: middle;
     top: 5vh;
     left: 0;
-    width: 15vw;
+    width: 30vw;
     height: 15vmin;
     margin: 0;
     padding: 0;
 }
 
 logocontainer:first-of-type {
-    width: 42.5vw;
+    width: 35vw;
     height: 5.5vmin;
     text-align: right;
 }
 
 logocontainer:last-of-type {
-    width: 42.5vw;
+    width: 35vw;
     height: 5.5vmin;
     text-align: left;
 }
@@ -67,11 +67,17 @@ logocontainer:last-of-type {
 logocontainer img {
     position: relative;
     display: inline-block;
-    height: 100%;
-    width: auto;
+    width: 100%;
     margin-left: 1vmin;
     margin-right: 1vmin;
     z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+logocontainer:first-of-type img, logocontainer:last-of-type img {
+    height: 100%;
+    width: auto;
 }
 
 container img {
