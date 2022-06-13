@@ -256,8 +256,15 @@ arrow-spacer::after {
 .content sottotitolo {
     font-size: 1.8vh;
     line-height: 1.8vh;
-    padding-right: 2vw;
     color: rgb(100, 120, 128);
+}
+
+.content:nth-of-type(odd) sottotitolo {
+    padding-right: 2vw;
+}
+
+.content:nth-of-type(even) sottotitolo {
+    padding-left: 2vw;
 }
 
 .content:nth-of-type(odd) titolo::after {
