@@ -15,18 +15,20 @@
         <a href="./index.html"><div class="home"></div></a>
 
         <location-header>
-            <img src="img/LogoBaladin.svg">
+            <div class="img-wrapper">
+                <img src="img/LogoBaladin.svg">
+            </div>
             <name>Open Baladin</name>
             <address>Piazza Foro Boario</address>
-            <a href="https://www.google.com/maps?saddr=My+Location&daddr=Piazza+Foro+Boario+12100+Cuneo+Italy">
+            <a href="https://goo.gl/maps/eKvBFodwpyznX8428">
             <mapicon></mapicon>
             </a>
         </location-header>
-
+        
         <events-container>
-            <event style="width: 100vw;" id="ritornelleremo-baladin"><a>
-                Ritornelleremo!
-                <data>18 settembre - ore 21:00</data>
+            <event style="width: 100vw;" id="bandakadabra"><a>
+                Bandakadabra
+                <data>3 luglio - ore 21:00</data>
             </a></event>
         </events-container>
     </body>
@@ -39,33 +41,41 @@
     
     window.EBWidgets.createWidget({
         widgetType: 'checkout',
-        eventId: '114364858370',
+        eventId: '156779865799',
         modal: true,
-        modalTriggerElementId: 'musicanti-birrovia',
+        modalTriggerElementId: 'mulinoadarte',
         onOrderComplete: exampleCallback
     });
     
     window.EBWidgets.createWidget({
         widgetType: 'checkout',
-        eventId: '114366045922',
+        eventId: '156778112555',
         modal: true,
-        modalTriggerElementId: 'circolare-baladin',
+        modalTriggerElementId: 'bellifreschi',
         onOrderComplete: exampleCallback
     });
 
     window.EBWidgets.createWidget({
         widgetType: 'checkout',
-        eventId: '114366202390',
+        eventId: '156780553857',
         modal: true,
-        modalTriggerElementId: 'teatralmente-birrovia',
+        modalTriggerElementId: 'tomnewtontrio',
         onOrderComplete: exampleCallback
     });
 
     window.EBWidgets.createWidget({
         widgetType: 'checkout',
-        eventId: '114366316732',
+        eventId: '156781103501',
         modal: true,
-        modalTriggerElementId: 'ritornelleremo-baladin',
+        modalTriggerElementId: 'bandakadabra',
+        onOrderComplete: exampleCallback
+    });
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '156781290059',
+        modal: true,
+        modalTriggerElementId: 'granbaldub',
         onOrderComplete: exampleCallback
     });
 </script>

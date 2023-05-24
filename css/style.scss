@@ -47,20 +47,20 @@ logocontainer {
     vertical-align: middle;
     top: 5vh;
     left: 0;
-    width: 15vw;
+    width: 30vw;
     height: 15vmin;
     margin: 0;
     padding: 0;
 }
 
 logocontainer:first-of-type {
-    width: 42.5vw;
+    width: 35vw;
     height: 5.5vmin;
     text-align: right;
 }
 
 logocontainer:last-of-type {
-    width: 42.5vw;
+    width: 35vw;
     height: 5.5vmin;
     text-align: left;
 }
@@ -68,11 +68,17 @@ logocontainer:last-of-type {
 logocontainer img {
     position: relative;
     display: inline-block;
-    height: 100%;
-    width: auto;
+    width: 100%;
     margin-left: 1vmin;
     margin-right: 1vmin;
     z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+logocontainer:first-of-type img, logocontainer:last-of-type img {
+    height: 100%;
+    width: auto;
 }
 
 container img {
@@ -122,24 +128,24 @@ motto, andyou, description {
     width: 100vw;
     left: 0;
     text-align: center;
-    font-size: 3vw;
+    font-size: 4vh;
     font-family: squarefont;
     margin-top: 2vh;
     white-space: pre-line;
-    background-color: white;
+    background-color: rgb(20,25,31);
     color: rgb(231, 129, 62);
 }
 
 description andyou {
     width: 100%;
-    font-size: 1.5vw;
+    font-size: 1.5vh;
     margin-top: 4vh;
     margin-bottom: 10vh;
     color: rgb(231, 129, 62);
 }
 
 description {
-    font-size: 1.7vw;
+    font-size: 1.7vh;
     margin-left: 20vw;
     margin-right: 20vw;
     width: 60vw;
@@ -165,11 +171,11 @@ spacer, arrow-spacer {
     position: relative;
     display: inline-block;
     width: 100vw;
-    height: 5vh;
+    height: 8vh;
     overflow-x: hidden;
 }
 
-spacer {
+arrow-spacer {
     height: 10vh;
 }
 
@@ -211,6 +217,7 @@ arrow-spacer::after {
 
 .past {
     opacity: .3;
+    pointer-events: none;
 }
 
 .content:nth-of-type(odd) {
@@ -225,7 +232,7 @@ arrow-spacer::after {
 }
 
 .content data {
-    font-size: 2vw;
+    font-size: 2vh;
     font-family: squarefont;
     color: rgb(52, 73, 79);
     border-bottom: 5px solid rgb(52,63,79);
@@ -241,10 +248,24 @@ arrow-spacer::after {
     padding-right: 14vw;
 }
 
-.content titolo {
-    font-size: 4vw;
+.content titolo, .content sottotitolo {
+    font-size: 3vh;
     font-family: heroregular;
-    line-height: 6vw;
+    line-height: 5vh;
+}
+
+.content sottotitolo {
+    font-size: 1.8vh;
+    line-height: 1.8vh;
+    color: rgb(100, 120, 128);
+}
+
+.content:nth-of-type(odd) sottotitolo {
+    padding-right: 2vw;
+}
+
+.content:nth-of-type(even) sottotitolo {
+    padding-left: 2vw;
 }
 
 .content:nth-of-type(odd) titolo::after {
@@ -272,14 +293,14 @@ arrow-spacer::after {
 }
 
 .content chi {
-    font-size: 1.7vw;
+    font-size: 1.7vh;
     font-family: heroregular;
 }
 
-.content chi a {
+.content titolo a {
     vertical-align: middle;
     height: 1.7vw;
-    font-size: 1.2vw;
+    font-size: 1.2vh;
     line-height: 1.7vw;
     margin-left: .5vw;
     margin-right: .5vw;
@@ -287,36 +308,53 @@ arrow-spacer::after {
     color: rgb(231, 129, 62);
 }
 
-.content chi a::after {
+.content titolo a::after {
     content: '[+]';
     transition: content 1s;
 }
 
-.content chi a:hover::after {
+.content titolo a:hover::after {
     content: '[more]';
 }
 
-.content dove, prezzo {
-    font-size: 1.2vw;
+.content dove, prezzo, food, ora {
+    font-size: 1.2vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(62, 68, 78);
 }
 
-.content data, chi, dove, titolo, prezzo{
+.content food {
+    padding-top: 1vh;
+}
+
+.content data, chi, dove, titolo, prezzo, food, ora{
     padding-left: 2vw;
     padding-right: 2vw;
 }
 
-.content dove::before {
-    content: '📍';
+.content:nth-of-type(even) dove::before, .content:nth-of-type(odd) dove::after {
+    content: ' 📍 ';
 }
 
-.content prezzo::before {
-    content: '🏷 ';
+.content:nth-of-type(even) prezzo::before, .content:nth-of-type(odd) prezzo::after {
+    content: ' 🏷 ';
 }
 
-location a {
-    text-decoration: none;
+.content:nth-of-type(even) ora::before, .content:nth-of-type(odd) ora::after {
+    content: ' 🕣 ';
+}
+
+.content:nth-of-type(even) food::before, .content:nth-of-type(odd) food::after {
+    content: ' 🍽 ';
+}
+
+location a, dove a {
+    // text-decoration: none;
+    color: rgb(231, 129, 62);
+}
+
+location a:hover, dove a:hover {
+    color: rgb(62, 68, 78);
 }
 
 location-wrapper {
@@ -387,7 +425,7 @@ location book a, .content book a {
     width: 50vw;
     left: 0;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2.5vh;
     font-family: squarefont;
     text-decoration: none;
     white-space: pre-line;
@@ -400,7 +438,7 @@ location book a, .content book a {
 
 .content book a {
     text-align: inherit;
-    font-size: 1.5vw;
+    font-size: 1.5vh;
     width: 100%;
     padding-top: 1vh;
     animation-name: flare-black;
@@ -456,7 +494,7 @@ partnercontainer img{
 }
 
 partnercontainer:nth-of-type(1) {
-    width: calc(28vw * 6 * 2);
+    width: calc(28vw * 8 * 2);
     animation: scroll 15s linear 0s infinite;
     left: 0;
     // left: calc(-28vw * 4 - 1vw);
@@ -464,7 +502,7 @@ partnercontainer:nth-of-type(1) {
 
 @keyframes scroll {
     0% { left: 0; }
-	100% { left: calc(-28vw * 5 - 1vw); }  /* top is the number of spans (in this case 8) multiplied by span height (45px as described above)*/
+	100% { left: calc(-28vw * 7 - 1vw); }  /* top is the number of spans (in this case 8) multiplied by span height (45px as described above)*/
 }
 
 partnercontainer:nth-of-type(1) img{
@@ -562,16 +600,68 @@ footer a:hover {
     color: rgb(252,212,117);
 }
 
-.cunicolanti {
+.cunicolanti, .volontari {
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-columns: min-content;
     top: -10vh;
     width: 100vw;
     background-color: white;
     left: 0;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2.5vh;
     font-family: squarefont;
     text-decoration: none;
     white-space: pre-line;
-    padding-bottom: 7vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.volontari {
+    grid-template-columns: repeat(5, 1fr);
+    font-family: heroregular;
+    // margin: auto;
+    font-size: 1.5vh;
+}
+
+.volontari img {
+    height: 8vw;
+    width: auto;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.volontari ruolo {
+    font-size: smaller;
+}
+
+chat {
+    position: fixed;
+    z-index: 10;
+    right: calc(-30vw + 6vmin);
+    bottom: 5px;
+    height: 30vh;
+    width: 30vw;
+    border-radius: 6vmin 0 0 6vmin;
+    transition: right .3s ease-in-out;
+    background-color: white;
+    box-shadow: 0 0 4px black;
+}
+
+chattitle {
+    position: absolute;
+    top: calc((30vh - 6vmin) / 2);
+    left: 0;
+    width: fit-content;
+    height: 6vmin;
+    line-height: 6vmin;
+    font-family: squarefont;
+    font-size: 3vmin;
+    transform: rotate(-90deg);
+}
+
+chat:hover {
+    right: 0;
 }

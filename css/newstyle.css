@@ -1,0 +1,250 @@
+html {
+    font-size: 17pw;
+    color: rgb(20,25,31);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: fit-content;
+    min-height: 100vh;
+    background-color: #03154f;
+}
+
+.bg, .page, .footer {
+    position: relative;
+    width: 100%;
+    height: 97vh;
+    background-image: url("/img/newbg.jpg");
+    background-position: left 20% top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg {
+    box-shadow: inset 0px -40px 20px -20px #03154f;
+    z-index: -1;
+}
+
+.hero {
+    position: absolute;
+    top: 50vh;
+    left: 15%;
+    width: 40%;
+    height: fit-content;
+    z-index: 2;
+    transform: translateY(-50%);
+    text-shadow: 4px 7px 4px #03154f;
+    padding: 4vh;
+    background-color: #03154fBB;
+    border-radius: 5vh;
+    border: solid 1px #00e1da;
+}
+
+.hero .title {
+    font-size: 14vh;
+    padding-top: 4vh;
+    font-family: "squarefont";
+    color: white;
+    line-height: 8vh;
+    text-align: center;
+}
+
+.hero .subtitle {
+    font-size: 4vh;
+    font-family: "heroregular";
+    color: white;
+    text-align: center;
+    letter-spacing: .8vh;
+}
+
+.hero p {
+    font-size: 3vh;
+    width: 80%;
+    margin: auto;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.hero .button {
+    text-shadow: none;
+    padding: 2vh;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    background-color: #fa9133;
+    border-radius: 2vh;
+    border: solid 1px #00e1da;
+    font-family: "squarefont";
+    transition: all .2s;
+}
+
+.hero a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero .button:hover {
+    background-color: #03154f;
+    color: #fa9133;
+    cursor: pointer;
+}
+
+@media (orientation: portrait){
+    .hero {
+        width: fit-content;
+        max-width: 60%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .hero .title {
+        font-size: 14vw;
+        padding-top: 2vw;
+    }
+
+    .hero .subtitle {
+        font-size: 3vw;
+        letter-spacing: .8vw;
+    }
+
+    .hero p {
+        font-size: 3vw;
+    }
+}
+
+
+.navbar, .toplogo {
+    display: table;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: fit-content;
+    z-index: 10;
+}
+
+.item {
+    display: table-cell;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #03154f;
+    box-shadow: 0px 0px 10px 10px #03154f;
+}
+
+.item a, .toplogo {
+    color: #fa9133;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: "squarefont";
+    text-decoration: none;
+    transition: border-bottom .2s;
+    transform-style: preserve-3d;
+}
+
+.toplogo {
+    color: white;
+    font-weight: 900;
+    left: 20px;
+}
+
+.item:hover a {
+    color: white;
+    border-bottom: double #00e1da;
+}
+
+.page, .footer {
+    background: none;
+}
+
+.page {
+    width: 90vw;
+    height: fit-content;
+    min-height: 100vh;
+    margin: 5vw;
+}
+
+.page .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 6vh;
+    text-align: center;
+    font-family: "squarefont";
+    color: aliceblue;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+}
+
+.schedule-container {
+    position: relative;
+    top: -2vh;
+    left: 11vh;
+    width: calc(100vw - 21vh);
+    display: table;
+    color: aliceblue;
+    border-spacing: 2vh 2vh;
+}
+
+.schedule-row {
+    display: table-row;
+    width: 100%;
+}
+
+.schedule-row img {
+    display: table-cell;
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+
+.schedule-row .details {
+    display: table-cell;
+    width: 60%;
+    vertical-align: middle;
+}
+
+.details .when, .details .who, .details .where {
+    font-family: "squarefont";
+}
+
+.details .who {
+    font-size: 4vh;
+}
+
+.details .when, .details .where {
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 100vw;
+    background-color: #0b3682;
+    text-align: center;
+    color: #00e1da;
+    font-size: 10px;
+    line-height: 10px;
+    box-shadow: 0px -10px 10px 5px #0b3682;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
