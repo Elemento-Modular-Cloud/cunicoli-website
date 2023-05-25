@@ -50,16 +50,17 @@ body {
 }
 
 .hero .title {
-    font-size: 14vh;
+    font-size: 11vmin;
     padding-top: 4vh;
+    padding-bottom: 1vh;
     font-family: "squarefont";
     color: white;
-    line-height: 8vh;
+    line-height: 8vmin;
     text-align: center;
 }
 
 .hero .subtitle {
-    font-size: 4vh;
+    font-size: 3.5vh;
     font-family: "heroregular";
     color: white;
     text-align: center;
