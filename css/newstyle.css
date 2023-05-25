@@ -46,6 +46,7 @@ body {
     background-color: #03154fBB;
     border-radius: 5vh;
     border: solid 1px #00e1da;
+    box-shadow: 0px 0px 10px #00e1da;
 }
 
 .hero .title {
@@ -85,6 +86,7 @@ body {
     background-color: #fa9133;
     border-radius: 2vh;
     border: solid 1px #00e1da;
+    box-shadow: 0px 0px 10px #00e1da;
     font-family: "squarefont";
     transition: all .2s;
 }
@@ -209,12 +211,27 @@ body {
     width: 100%;
     height: 25vh;
     object-fit: cover;
+    border-radius: 2vh;
+    border: solid 1px #00e1da;
+    box-shadow: 0px 0px 10px #00e1da;
 }
 
 .schedule-row .details {
     display: table-cell;
     width: 60%;
     vertical-align: middle;
+}
+
+@media (orientation: portrait){
+    .schedule-row {
+        display: table;
+    }
+    .schedule-row img {
+        display: table-row;
+    }
+    .schedule-row .details {
+        display: table-row;
+    }
 }
 
 .details .when, .details .who, .details .where {
