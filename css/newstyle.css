@@ -88,7 +88,7 @@ body {
     border: solid 1px #00e1da;
     box-shadow: 0px 0px 10px #00e1da;
     font-family: "squarefont";
-    font-size: 3vh;
+    font-size: 3vmin;
     transition: all .2s;
 }
 
@@ -193,12 +193,10 @@ body {
 }
 
 .page p img {
-    width: 50vw;
-    margin-left: 15vw;
+    width: 100%;
     margin-top: 2vh;
     margin-bottom: 2vh;
     height: auto;
-    /* object-fit: cover; */
     border-radius: 2vh;
     border: solid 1px #00e1da;
     box-shadow: 0px 0px 10px #00e1da;
@@ -211,9 +209,6 @@ body {
     width: calc(90vw - 21vh);
     color: white;
     border-radius: 2vh;
-    /* padding: 2vh;
-    border: solid 1px #00e1da;
-    box-shadow: 0px 0px 10px #00e1da; */
     white-space: pre-line;
     font-size: 2vmin;
     line-height: 3vmin;
@@ -236,7 +231,7 @@ body {
     width: 100%;
 }
 
-.schedule-row img {
+.page .schedule-row img {
     display: table-cell;
     width: 100%;
     height: 25vh;
