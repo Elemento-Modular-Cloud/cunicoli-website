@@ -217,7 +217,7 @@ body {
     color: white;
 }
 
-.schedule-container {
+.schedule-container, .schedule-group {
     position: relative;
     top: -2vh;
     left: 11vh;
@@ -227,10 +227,19 @@ body {
     border-spacing: 2vh 2vh;
 }
 
-.schedule-row {
+.schedule-row, .plus {
     display: table-row;
     width: 100%;
 }
+
+.schedule-group {
+    background-color: #00e1da22;
+    border-radius: 2vh;
+    border: solid 1px #00e1da;
+    box-shadow: 0px 0px 10px #00e1da;
+    width: 97%;
+}
+
 
 .page .schedule-row img {
     display: table-cell;
@@ -257,6 +266,10 @@ body {
     }
     .schedule-row .details {
         display: table-row;
+    }
+    .schedule-group {
+        display: table;
+        width: 83%;
     }
 }
 
